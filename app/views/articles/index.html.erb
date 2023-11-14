@@ -1,0 +1,8 @@
+<%= render "navbar"%>
+
+<ul>
+    <% @articles.each do |article| %>
+    <li><h3><%= article.title %></h3></li>
+    <p><%= article.content %></p>
+    <% end %>
+</ul>
